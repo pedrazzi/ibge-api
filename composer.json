@@ -26,5 +26,6 @@
     "psr-4": {
       "Pedrazzi\\Ibge\\": "src/"
     }
-  }
+  },
+  "minimum-stability": "stable"
 }
