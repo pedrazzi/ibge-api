@@ -27,5 +27,5 @@
       "Pedrazzi\\Ibge\\": "src/"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
