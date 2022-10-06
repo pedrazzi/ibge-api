@@ -10,7 +10,7 @@ Em breve serão implantadas novas requisições.
 Execute o seguinte comando para instalar esta biblioteca:
 
 ```bash
-$ composer require pedrazzi/ibge-api
+$ composer require pedrazzi/ibge-api:dev-master
 ```
 
 ## Como utilizar
