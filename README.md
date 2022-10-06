@@ -1,6 +1,6 @@
 # ibge-api
 
-Bibliote para consulta dos dados da API oficial do IBGE.
+Biblioteca `PHP` para consulta dos dados da API oficial do IBGE.
 
 >NOTA: inicialmente a API só faz requisições de localidades (Estados e Municípios).
 Em breve serão implantadas novas requisições.
