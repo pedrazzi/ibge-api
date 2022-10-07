@@ -2,7 +2,7 @@
 
 Biblioteca `PHP` para consulta dos dados da API oficial do IBGE.
 
->NOTA: inicialmente a API só faz requisições de localidades (Estados e Municípios).
+>NOTA: a API faz apenas buscas por localidades: estados, cidades, regiões e países.
 Em breve serão implantadas novas requisições.
 
 ## Instalação
@@ -35,6 +35,13 @@ $ufs = $local::getEstados()->request();
 
 // retorna lista (array) de cidades do estado de São Paulo (código 35)
 $citys = $local::getCidades(35)->request(); 
+
+// retorna lista (array) das regiões do Brasil
+$regioes = $local::getRegioes()->request();
+
+// retorna lista (array) com todos os países
+$paises = $local::getPaises()->request();
+
 ```
 
 #### Usando a Classe Estados
@@ -56,7 +63,36 @@ require 'vendor/autoload.php';
 
 use Pedrazzi\Ibge\Localidades\Cidades;
 
-$local = new Cidades();
+// 35 código do estado de São Paulo
+$local = new Cidades(35);
 
 $ufs = $local->request(); 
+```
+
+#### Usando a Classe Regioes
+
+Retorna lista de regiões do Brasil.
+
+```php
+require 'vendor/autoload.php';
+
+use Pedrazzi\Ibge\Localidades\Regioes;
+
+$local = new Regioes();
+
+$regioes = $local->request();
+```
+
+#### Usando a Classe Paises
+
+Retorna lista de países.
+
+```php
+require 'vendor/autoload.php';
+
+use Pedrazzi\Ibge\Localidades\Paises;
+
+$local = new Paises();
+
+$paises = $local->request();
 ```
