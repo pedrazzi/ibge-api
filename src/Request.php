@@ -25,12 +25,12 @@ class Request
 		$this->url = self::URL_BASE . "/$this->version/$url";
 	}
 
-	public function setOrderName()
+	public function setOrderName(): void
 	{
 		$this->module->params['orderBy'] = "name";
 	}
 
-	public function setNivelado()
+	public function setNivelado(): void
 	{
 		$this->module->params['view'] = "nivelado";
 	}
