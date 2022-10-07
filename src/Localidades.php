@@ -21,7 +21,7 @@ class Localidades extends Request
 
 	function __construct()
 	{
-		$this->module = new Request('Localidades', Config::VERSION);
+		$this->module = new Request(Config::VERSION);
 	}
 
 	public static function Ufs(): object
