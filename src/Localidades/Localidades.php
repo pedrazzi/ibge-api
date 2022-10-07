@@ -3,9 +3,7 @@
 namespace Pedrazzi\Ibge\Localidades;
 
 use Pedrazzi\Ibge\Request;
-use Pedrazzi\Ibge\Localidades\Config;
-use Pedrazzi\Ibge\Localidades\Estados;
-use Pedrazzi\Ibge\Localidades\Cidades;
+use Pedrazzi\Ibge\Localidades\{Config, Estados, Cidades, Paises, Regioes};
 
 class Localidades extends Request
 {
@@ -20,8 +18,18 @@ class Localidades extends Request
 		return new Estados();
 	}
 
-	public static function getCidades(string $id = null): object
+	public static function getCidades(string $id = 35): object
 	{
 		return new Cidades($id);
+	}
+
+	public static function getPaises(): object
+	{
+		return new Paises();
+	}
+
+	public static function Regioes(): object
+	{
+		return new Regioes();
 	}
 }
