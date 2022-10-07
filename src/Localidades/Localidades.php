@@ -5,6 +5,14 @@ namespace Pedrazzi\Ibge\Localidades;
 use Pedrazzi\Ibge\Request;
 use Pedrazzi\Ibge\Localidades\{Config, Estados, Cidades, Paises, Regioes};
 
+/**
+ * Localidades
+ *
+ * @author Fábio Pedrazzi <pedrazzi@hotmail.com>
+ * @date 06/10/2022
+ * 
+ * Documentação: https://servicodados.ibge.gov.br/api/docs/localidades
+ */
 class Localidades extends Request
 {
 
