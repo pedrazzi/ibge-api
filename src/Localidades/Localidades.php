@@ -18,7 +18,7 @@ class Localidades extends Request
 		return new Estados();
 	}
 
-	public static function getCidades(string $id = 35): object
+	public static function getCidades(string $id = '35'): object
 	{
 		return new Cidades($id);
 	}
