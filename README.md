@@ -22,4 +22,4 @@ require 'vendor/autoload.php';
 ```
 
 ## Documentação
-Consulte a [documentanção](https://github.com/pedrazzi/ibge-api/wiki) da API para obter instruções mais específicas sobre as recomendações de de uso.
+Consulte a [documentação](https://github.com/pedrazzi/ibge-api/wiki) da API para obter instruções mais específicas sobre as recomendações de de uso.
